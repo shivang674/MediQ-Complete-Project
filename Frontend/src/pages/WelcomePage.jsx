@@ -83,7 +83,7 @@ const WelcomePage = () => {
                         <div className="bg-white/50 backdrop-blur-lg rounded-2xl shadow-xl overflow-hidden p-4">
                             <img 
                                 className="rounded-xl shadow-lg w-full animate-float-zoom transition-all duration-500 ease-in-out hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/40" 
-                                src="src/images/depositphotos_100494552-stock-photo-blood-in-test-tube.jpg" alt="Tests"
+                                src="/depositphotos_100494552-stock-photo-blood-in-test-tube.jpg" alt="Tests"
                             />
                         </div>
                     </div>
