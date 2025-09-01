@@ -26,7 +26,7 @@ const ReportsPage = () => {
                         Authorization: `Bearer ${token}`,
                     },
                 };
-                const { data: orders } = await axios.get('http://localhost:5000/api/orders', config);
+                const { data: orders } = await axios.get('https://mediq-api.onrender.com/api/orders', config);
                 
                
                 const completedOrders = orders.filter(order => order.status === 'Completed');

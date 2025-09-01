@@ -23,7 +23,7 @@ const LoginPage = ({ onLoginSuccess }) => {
         headers: { 'Content-Type': 'application/json' },
       };
       const body = { email, password };
-      const { data } = await axios.post('http://localhost:5000/api/users/login', body, config);
+      const { data } = await axios.post('https://mediq-api.onrender.com/api/users/login', body, config);
       onLoginSuccess(data.token);
     } catch (err) {
       setError(err.response?.data?.message || 'An error occurred. Please try again.');

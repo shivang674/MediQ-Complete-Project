@@ -26,7 +26,7 @@ const OrderHistoryPage = () => {
                         Authorization: `Bearer ${token}`,
                     },
                 };
-                const { data } = await axios.get('http://localhost:5000/api/orders', config);
+                const { data } = await axios.get('https://mediq-api.onrender.com/api/orders', config);
                 setOrders(data);
             } catch (err) {
                 setError(err.response?.data?.message || 'Failed to fetch orders.');

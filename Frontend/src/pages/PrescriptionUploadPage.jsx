@@ -63,7 +63,7 @@ const PrescriptionUploadPage = () => {
                 },
             };
 
-            await axios.post('http://localhost:5000/api/orders', formData, config);
+            await axios.post('https://mediq-api.onrender.com/api/orders', formData, config);
 
             setStatus({ message: 'Order placed successfully! Track it in Order History.', type: 'success' });
             

@@ -20,7 +20,7 @@ const WelcomePage = () => {
         }
 
         try {
-            const { data } = await axios.post('http://localhost:5000/api/subscribe', { email: newsletterEmail });
+            const { data } = await axios.post('https://mediq-api.onrender.com/api/subscribe', { email: newsletterEmail });
             setNewsletterStatus({ message: data.message, type: 'success' });
             setNewsletterEmail('');
         } catch (err) {

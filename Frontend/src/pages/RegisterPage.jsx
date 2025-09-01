@@ -31,7 +31,7 @@ const RegisterPage = ({ onLoginSuccess }) => {
         };
         const body = { name, email, password };
 
-        const { data } = await axios.post('http://localhost:5000/api/users/register', body, config);
+        const { data } = await axios.post('https://mediq-api.onrender.com/api/users/register', body, config);
         
         onLoginSuccess(data.token);
 
