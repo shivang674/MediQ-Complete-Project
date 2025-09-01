@@ -21,7 +21,7 @@ const App = () => {
       if (token) {
         try {
           const config = { headers: { Authorization: `Bearer ${token}` } };
-          const { data } = await axios.get('http://localhost:5000/api/users/profile', config);
+          const { data } = await axios.get('https://mediq-api.onrender.com/api/users/profile', config);
           setUser(data);
           setIsLoggedIn(true);
         } catch (error) {
